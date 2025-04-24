@@ -2,15 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-               echo hello
-            }
-        }
-
-        stage('Run PowerShell Script') {
-            steps {
-                powershell './your-script.ps1'  // Change this to your actual script filename
+                script {
+                    echo 'Hello, World!'
+                }
             }
         }
     }
