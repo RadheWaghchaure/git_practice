@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/RadheWaghchaure/PowerShell.git'
+               echo hello
             }
         }
 
